@@ -69,7 +69,7 @@ Validation on methods & controllers
 
 In the controller class add `@Validated` annotation to perform validation on method input parameters.
 
-Not used as much as data POJO validation
+Not used as much as data POJO (_Plain Old Java Objects)_ validation
 
 
 # @ControllerAdvice (Global Controller Methods)
