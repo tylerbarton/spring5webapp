@@ -103,3 +103,11 @@ A GIT version strategy example (cars)
 ![image](https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/v_table.png)
 
 ![git](https://raw.githubusercontent.com/lyndseypadget/semflow/master/images/gitflow_hack.png)
+
+# Issues
+### 1. Test Cases: @MockBean is null
+```text
+java.lang.NullPointerException: Cannot invoke "com.tylerbarton.msscbrewery.services.BeerService.getBeerById(java.util.UUID)" because "this.beerService" is null
+```
+> tests should match src directory ex:
+> com.tyler.barton.msscbrewery.web.controller package must match exactly.
