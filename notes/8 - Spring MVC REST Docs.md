@@ -316,4 +316,8 @@ Confirm in `target/generated-snippests/v1/beer/curl-request.adoc`
 </plugin>
 ```
 
-### JUnit 5
+# Errors
+
+1. RestDocuemtnationExtension.class not importing (@ExtendWith(RestDocumentationExtension.class))
+
+`import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;`
