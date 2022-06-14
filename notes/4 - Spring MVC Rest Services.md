@@ -28,6 +28,17 @@ Enterprise Release:
   - jar files in Maven Central
   - Docker images in Docker hub
 
+# HTTP Methods for RESTful services:
+
+| HTTP Verb | CRUD | Entire collection (eg /customers) |
+|-----------|------|-----------------------------------|
+|           |      |                                   |
+|           |      |                                   |
+|           |      |                                   |
+|           |      |                                   |
+|           |      |                                   |
+
+
 # REST Method for GET
 Goals:
 - Create New Project
