@@ -316,8 +316,20 @@ Confirm in `target/generated-snippests/v1/beer/curl-request.adoc`
 </plugin>
 ```
 
+# OpenAPI (Swagger)
+[Full Tutorial](https://simplesolution.dev/spring-boot-rest-api-openapi-swagger-ui-springdoc-openapi/)
+
+![](./images/SpringOpenApi1024_1.jpg)
+![](./images/SpringOpenApi1024_2.jpg)
+![](./images/SpringOpenApi1024_3.jpg)
+![](./images/SpringOpenApi1024_4.jpg)
+![](./images/SpringOpenApi1024_5.jpg)
+![](./images/SpringOpenApi1024_6.jpg)
+![](./images/SpringOpenApi1024_7.jpg)
+![](./images/SpringOpenApi1024_8.jpg)
+![](./images/SpringOpenApi1024_9.jpg)
 # Errors
 
-1. RestDocuemtnationExtension.class not importing (@ExtendWith(RestDocumentationExtension.class))
+1. RestDocumentationExtension.class not importing (@ExtendWith(RestDocumentationExtension.class))
 
 `import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;`
