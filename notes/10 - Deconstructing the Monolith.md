@@ -164,12 +164,44 @@ Example configuration:
 </config>
 ```
 
+Example Base Configuration
+```xml
+<?xml version="1.0" encoding="UTF-8"?>       
+<config
+xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+xmlns='http://www.ehcache.org/v3'
+xsi:schemaLocation="ehcache-core.xsd">
+    <persistence directory="java.io.tmpdir"/>
+    <cache alias="twentySeconds">
+        <expiry>
+            <ttl unit="seconds">20</ttl>
+        </expiry>
+        <heap>2</heap>
+    </cache>
+</config>
+```
+
+If `Error parsing XML configuration` try:
+```xml
+<ehcache:config xmlns:ehcache="http://www.ehcache.org/v3" xmlns:jcache="http://www.ehcache.org/v3/jsr107">
+    <ehcache:cache alias="books">
+        <ehcache:key-type>java.lang.String</ehcache:key-type>
+        <ehcache:value-type>hello.Book</ehcache:value-type>
+        <ehcache:resources>
+            <ehcache:heap unit="MB">1</ehcache:heap>
+            <!--ehcache:offheap unit="MB">10</ehcache:offheap-->
+        </ehcache:resources>
+    </ehcache:cache>
+</ehcache:config>
+```
+
+
 2. Set in application.properties:
 `spring.cache.jcache.config=classpath:ehcache.xml`
 
 3. in cache object classes, include `implements Serializable`
 
-4. in java/{com}/config/CacheConfig.java
+4. in `java/{com}/config/CacheConfig.java`:
 ```java
 @EnableCaching
 @Configuration
